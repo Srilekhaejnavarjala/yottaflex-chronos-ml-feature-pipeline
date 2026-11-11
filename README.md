@@ -9,7 +9,7 @@ This repository demonstrates data ingestion, schema and business validation, rej
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/Srilekhaejnavarjala/yottaflex-chronos-ml-feature-pipeline.git
 cd chronos-ml-feature-pipeline
 ```
 
@@ -21,19 +21,26 @@ python -m venv venv
 
 Windows:
 ```bash
-venv\Scripts\activate
+# Clone the repository
+git clone https://github.com/Srilekhaejnavarjala/yottaflex-chronos-ml-feature-pipeline.git
+
+# Navigate into the project
+cd yottaflex-chronos-ml-feature-pipeline
+
+# Create virtual environment
+py -m venv venv
 ```
 
 ### 3. Install Dependencies
 
 ```bash
-python -m pip install -r requirements.txt
+py -m pip install -r requirements.txt
 ```
 
 ### 4. Run the Pipeline
 
 ```bash
-python -m src.pipeline
+py -m src.pipeline
 ```
 
 ### 5. Launch the Streamlit Dashboard
