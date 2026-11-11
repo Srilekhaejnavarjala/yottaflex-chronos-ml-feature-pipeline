@@ -1,0 +1,81 @@
+{
+  "python": "3.14.3",
+  "pandas": "3.1.1",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "cpu_count": 8,
+  "seed": 42,
+  "results": [
+    {
+      "requested_events": 1000,
+      "input_events": 1120,
+      "customers": 50,
+      "prediction_requests": 200,
+      "feature_rows": 200,
+      "status": "success",
+      "ingest_s": 0.0748,
+      "validate_s": 0.0631,
+      "features_s": 0.0118,
+      "labels_s": 0.024,
+      "publish_s": 0.0484,
+      "reconcile_s": 0.3302,
+      "export_s": 0.0192,
+      "total_s": 0.7548,
+      "throughput_events_per_s": 1483.8,
+      "optimization": {
+        "requests_compared": 200,
+        "naive_s": 0.2901,
+        "optimized_s": 0.0113,
+        "speedup_x": 25.6,
+        "outputs_identical": true
+      }
+    },
+    {
+      "requested_events": 10000,
+      "input_events": 10120,
+      "customers": 500,
+      "prediction_requests": 2000,
+      "feature_rows": 2000,
+      "status": "success",
+      "ingest_s": 0.0862,
+      "validate_s": 0.1446,
+      "features_s": 0.0687,
+      "labels_s": 0.2206,
+      "publish_s": 0.2363,
+      "reconcile_s": 0.7053,
+      "export_s": 0.0461,
+      "total_s": 1.6829,
+      "throughput_events_per_s": 6013.4,
+      "optimization": {
+        "requests_compared": 2000,
+        "naive_s": 3.9919,
+        "optimized_s": 0.0705,
+        "speedup_x": 56.6,
+        "outputs_identical": true
+      }
+    },
+    {
+      "requested_events": 100000,
+      "input_events": 100120,
+      "customers": 5000,
+      "prediction_requests": 20000,
+      "feature_rows": 20000,
+      "status": "success",
+      "ingest_s": 0.2,
+      "validate_s": 1.3268,
+      "features_s": 0.8607,
+      "labels_s": 3.1356,
+      "publish_s": 2.0919,
+      "reconcile_s": 3.3132,
+      "export_s": 0.3136,
+      "total_s": 11.4185,
+      "throughput_events_per_s": 8768.2,
+      "optimization": {
+        "requests_compared": 5000,
+        "naive_s": 46.3239,
+        "optimized_s": 0.3569,
+        "speedup_x": 129.8,
+        "outputs_identical": true
+      }
+    }
+  ]
+}

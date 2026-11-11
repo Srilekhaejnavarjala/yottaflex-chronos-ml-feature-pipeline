@@ -1,0 +1,55 @@
+
+run_id: run_20261111T061843_969ac52e
+status: success
+input_events: 3120
+valid_events: 3120
+rejected_events: 0
+duplicate_events: 0
+prediction_requests: 600  (valid: 600)
+feature_rows: 600
+complete_label_rows: 412
+incomplete_label_rows: 71
+feature_version: v1
+data_complete_through: 2026-10-01T00:00:00Z
+config_hash: ddfd61872cb13ab7
+duration_seconds: 0.8462
+
+all sources (input = valid + rejected + duplicate):
+  customers: {'input_rows': 100, 'valid_rows': 100, 'rejected_rows': 0, 'duplicate_rows': 0}
+  transactions: {'input_rows': 3120, 'valid_rows': 3120, 'rejected_rows': 0, 'duplicate_rows': 0}
+  prediction_requests: {'input_rows': 600, 'valid_rows': 600, 'rejected_rows': 0, 'duplicate_rows': 0}
+  TOTAL: {'input_rows': 3820, 'valid_rows': 3820, 'rejected_rows': 0, 'duplicate_rows': 0}
+
+publish (inserted / updated / unchanged):
+  customers: 0 / 0 / 100
+  canonical_events: 0 / 0 / 3120
+  prediction_requests: 0 / 0 / 600
+  customer_features: 0 / 0 / 600
+  training_labels: 0 / 0 / 483
+  rejected_records: 0 / 0 / 0
+
+stage_seconds: {"ingest": 0.0104, "validate": 0.1024, "features": 0.0343, "labels": 0.0866, "publish": 0.0875, "reconcile": 0.4995, "export": 0.0225}
+
+reconciliation checks:
+  [PASS] accounting_customers  input=100 valid=100 rejected=0 duplicate=0
+  [PASS] accounting_transactions  input=3120 valid=3120 rejected=0 duplicate=0
+  [PASS] accounting_prediction_requests  input=600 valid=600 rejected=0 duplicate=0
+  [PASS] feature_rows_equal_valid_requests  features=600 valid_requests=600
+  [PASS] label_rows_equal_training_requests  labels=483 training_requests=483
+  [PASS] feature_columns_match_contract_and_label_free  prediction_id,customer_id,prediction_timestamp,feature_version,purchase_count_30d,purchase_amount_sum_30d,purchase_amount_avg_30d,days_since_last_purchase,refund_count_30d,login_count_30d,customer_tenure_days
+  [PASS] leakage_audit_vs_reference  sample=300 
+  [PASS] training_inference_parity  sample=300
+  [PASS] sql_duplicate_feature_keys  violations=0
+  [PASS] sql_duplicate_label_keys  violations=0
+  [PASS] sql_features_without_prediction_request  violations=0
+  [PASS] sql_features_unknown_customer  violations=0
+  [PASS] sql_features_customer_mismatch  violations=0
+  [PASS] sql_requests_missing_features  violations=0
+  [PASS] sql_training_requests_missing_labels  violations=0
+  [PASS] sql_labels_for_non_training_requests  violations=0
+  [PASS] sql_complete_labels_beyond_watermark  violations=0
+  [PASS] sql_incomplete_labels_with_covered_horizon  violations=0
+  [PASS] sql_rejects_missing_traceability  violations=0
+  [PASS] sql_events_available_before_occurrence  violations=0
+  [PASS] sql_events_unknown_customer  violations=0
+

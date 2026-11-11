@@ -1,0 +1,5 @@
+2026-11-11 06:18:45,775 INFO [run_20261111T061845_dd485123] stage ingest: start
+2026-11-11 06:18:45,775 ERROR [run_20261111T061845_dd485123] stage ingest: FAILED SchemaError: customers: file not found: /dev/null
+
+PIPELINE FAILED: SchemaError: customers: file not found: /dev/null
+exit code: 1

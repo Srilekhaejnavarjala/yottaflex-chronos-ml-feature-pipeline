@@ -1,0 +1,19 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+data/generated/
+outputs/*
+!outputs/*/
+outputs/*/*
+!outputs/*/.gitkeep
+*.db
+*.sqlite
+*.sqlite3
+.env
+# IDE and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,8 @@
+prediction_id,customer_id,prediction_timestamp,feature_version,purchase_count_30d,purchase_amount_sum_30d,purchase_amount_avg_30d,days_since_last_purchase,refund_count_30d,login_count_30d,customer_tenure_days
+pred_0000003,C00096,2026-09-29T16:28:25Z,v1,6,83.54,13.9233,8.9718,0,1,219
+pred_0000014,C00073,2026-09-25T11:30:01Z,v1,0,0.0,,,0,2,183
+pred_0000015,C00099,2026-09-28T10:34:41Z,v1,3,99.34,33.1133,1.4631,0,4,155
+pred_0000018,C00044,2026-09-29T18:29:38Z,v1,1,16.44,16.44,23.4926,0,1,207
+pred_0000021,C00004,2026-09-27T21:26:08Z,v1,1,29.62,29.62,10.0341,0,2,190
+pred_0000026,C00100,2026-09-27T16:27:06Z,v1,4,40.0,10.0,7.3087,0,0,244
+pred_0000027,C00038,2026-09-29T05:16:38Z,v1,0,0.0,,,0,5,121

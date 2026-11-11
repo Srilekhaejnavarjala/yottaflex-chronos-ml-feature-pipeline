@@ -1,0 +1,18 @@
+Prediction timestamp T = 2026-10-20T12:00:00Z  (window: T-30d < event_time <= T  AND  available_at <= T)
+
+  event A: eligible=True  expected=True  OK   in window and known
+  event B: eligible=True  expected=True  OK   in window and known
+  event C: eligible=True  expected=True  OK   before cutoff and known
+  event D: eligible=False expected=False OK   happened after cutoff
+  event E: eligible=False expected=False OK   late-arriving: unknown at cutoff
+  event F: eligible=False expected=False OK   exactly at excluded lower boundary
+
+Feature row before appending 5 future purchases:
+ prediction_id customer_id feature_version  purchase_count_30d  purchase_amount_sum_30d  purchase_amount_avg_30d  days_since_last_purchase  refund_count_30d  login_count_30d  customer_tenure_days
+           p1          C1              v1                   3                     30.0                     10.0                    0.0007                 0                0                   292
+
+After appending them:
+ prediction_id customer_id feature_version  purchase_count_30d  purchase_amount_sum_30d  purchase_amount_avg_30d  days_since_last_purchase  refund_count_30d  login_count_30d  customer_tenure_days
+           p1          C1              v1                   3                     30.0                     10.0                    0.0007                 0                0                   292
+
+Historical features unchanged: True

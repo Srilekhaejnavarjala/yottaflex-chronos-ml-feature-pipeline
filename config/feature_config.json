@@ -1,0 +1,14 @@
+{
+  "feature_version": "v1",
+  "label_version": "v1",
+  "schema_version": "1",
+  "lookback_days": 30,
+  "target_horizon_days": 7,
+  "timezone": "UTC",
+  "lower_bound": "exclusive",
+  "upper_bound": "inclusive",
+  "availability_cutoff_required": true,
+  "qualifying_purchase_event_type": "purchase",
+  "qualifying_purchase_status": "completed",
+  "currency": "USD"
+}
